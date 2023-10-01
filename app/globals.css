@@ -25,3 +25,32 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.simple-keyboard {
+  max-width: 500px;
+}
+
+.simple-keyboard.myTheme1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.simple-keyboard.myTheme1 .hg-button {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(129, 131, 132, 0.5);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.simple-keyboard.myTheme1 .hg-button:active {
+  background: #565656;
+  color: white;
+}
+
+#root .simple-keyboard.myTheme1 + .simple-keyboard-preview {
+  background: #565656;
+}
